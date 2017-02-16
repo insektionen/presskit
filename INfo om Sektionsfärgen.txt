@@ -1,0 +1,11 @@
+Sektionens färg är Kiselblå.
+
+* RGB: 68, 104, 125 eller #44687D
+* CMYK: 45.6, 16.8, 0, 50.98
+* LAB: 42.2, -6.8, -15.7
+* PMS: PMS 5405 C
+* NCS: NCS S 4030-B
+
+Tänk på att om du använder Photoshop eller andra ritprogram och ändrar 
+"color mode" från RGB till CMYK eller tvärtom så kommer färgerna inte
+att stämma efteråt.
