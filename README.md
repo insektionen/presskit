@@ -1,4 +1,4 @@
-# presskit
+# Presskit
 Sektionens emblem, annat grafiskt material, och information kring det som kan vara bra att känna till
 
 Logotyperna finns i flera olika format:
@@ -22,7 +22,7 @@ OBS! KTH och THS kan vara en smula känsliga med hur deras logotyper används. V
 därför en smula försiktig och modifiera eller förvanska inte logotyperna på
 något vis.
 
-#Sektionens färg är Kiselblå.
+# Sektionens färg är Kiselblå.
 
 * RGB: 68, 104, 125 eller #44687D
 * CMYK: 45.6, 16.8, 0, 50.98
@@ -34,7 +34,7 @@ Tänk på att om du använder Photoshop eller andra ritprogram och ändrar
 "color mode" från RGB till CMYK eller tvärtom så kommer färgerna inte
 att stämma efteråt.
 
-#Tillgänglighet
+# Tillgänglighet
 Några generella tips för att göra affischer, webbgrafik och annat material 
 lättläst och tydligt, för att öka dess effektivitet:
 
