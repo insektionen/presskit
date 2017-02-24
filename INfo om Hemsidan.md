@@ -3,8 +3,7 @@ All information och nyheter som behöver komma upp på hemsidan mailas till komm
 När du skickar in en bild för din nyhet som ska upp på hemsidan, var vänlig 
 följ dessa riktlinjer så gör du livet enklare för alla:
 
-* "Karusellen" högst upp på framsidan: 1040 x 200 pixlar (viktigt att det är exakt!)
-* Nyhetsposter i feeden: 700 x 200 pixlar (viktigt att det är exakt!)
+* Bildstorlek: 1040 x 200 pixlar (viktigt att det är exakt!)
 * Format: PNG (eller JPG - se nedan)
 * Filstorlek: helst <500Kb
 
