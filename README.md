@@ -1,3 +1,56 @@
+# Press kit
+The chapter's emblem, other graphical material, and information about it that is good to know.
+
+The logo is available in several formats:
+* AI, SVG, EPS are vectorised files.
+* PNG are rasterised files.
+
+Which format to choose depends on what program you will be working in.
+If you have access to professional tools such as Adobe's Photoshop or Illustrator,
+or if you are planning to print the logos, use vectorised files for the best
+possible quality (AI, SVG eller EPS).
+
+For simpler cases, when adding a small logo to a document or the like, create
+web graphics, or if you are using a program that can't handle vectors you
+should use the rasterised files (PNG).
+
+The vectorised files are available in two colour formats, CMYK and RGB.
+For products that are to be printed you should always use CMYK.
+For products that are to be shown on a computer or TV screen you should use RGB.
+If you are uncertain about which to pick, choose RGB.
+
+Note that the chapter, as well as KTH and THS have clear rules for how their logotypes may be used. 
+Make sure to be careful and do not modify or mangle the logotypes in any way.
+
+# The chapter's colour is Silicon Blue
+
+* RGB: 68, 104, 125 or #44687D
+* CMYK: 45.6, 16.8, 0, 50.98
+* LAB: 42.2, -6.8, -15.7
+* PMS: PMS 5405 C
+* NCS: NCS S 4030-B
+
+Keep in mind that if you use Photoshop or another drawing program and change
+color mode from RGB to CMYK or vice versa the colours won't be correct afterwards.
+
+# Accessibility
+A few general tips to make posters, web graphics and other material clearer
+and easier to read, to increase it's efficiency:
+
+* Start with the most important stuff in your message
+* When you want to attract people, write in the order: 1) why, 2) how, 3) what
+* Avoid unnecessarily long and complex formulations and words
+* Avoid unnecessarily long sentences
+* Do use bullet lists
+* Avoid severely compressing or distending text
+* Do not use cursive fonts, if you must then only do cursive headings
+* Pick contrasting colours - no dark text on a dark background
+* If you put text on top of an image, make sure it is easy to read it
+* Avoid pure white backgrounds, instead choose an off-white colour
+
+Please contact the Communications Committee with suggestions and comments!
+
+
 # Presskit
 Sektionens emblem, annat grafiskt material, och information kring det som kan vara bra att känna till
 
