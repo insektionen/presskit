@@ -30,7 +30,7 @@ jobs:
             
             printf "\rProgress: [%${filled}s%${unfilled}s] %d%%" "$(printf '#%.0s' $(seq 1 $filled))" "$(printf ' %.0s' $(seq 1 $unfilled))" "$percentage"
             png_file="${file%.svg} 4k.png"
-            magick -background none -density 700 "$file" -quality 100 -resize 4000 "$png_file"
+            convert -background none -density 700 "$file" -quality 100 -resize 4000 "$png_file"
         done
         echo
 
