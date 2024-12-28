@@ -1,9 +1,9 @@
-name: Convert SVG to PNG
+name: Generate PNGs
 
 on:
-  push:
+  pull_request:
     branches:
-      - feat/svg-converter
+      - master
 
 jobs:
   convert-svg-to-png:
