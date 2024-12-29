@@ -1,0 +1,54 @@
+name: Generate PNGs
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  convert-svg-to-png:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Inkscape
+        run: |
+          sudo apt install inkscape
+
+      - name: Install Pngquant
+        run: |
+          sudo apt install pngquant
+
+      - name: Convert SVGs to PNGs
+        run: |
+          total_files=$(find ./ -type f -name "*.svg" | wc -l)
+          progress=0
+
+          find ./ -type f -name "*.svg" | while IFS= read -r file; do
+              progress=$((progress + 1))
+              percentage=$((progress * 100 / total_files))
+              filled=$((percentage / 2))
+              unfilled=$((50 - filled))
+              
+              printf "\rProgress: [%${filled}s%${unfilled}s] %d%%" "$(printf '#%.0s' $(seq 1 $filled))" "$(printf ' %.0s' $(seq 1 $unfilled))" "$percentage"
+              png_file="${file%.svg} 4k"
+              # convert -background none -density 700 "$file" -quality 100 -resize 4000 "$png_file"
+              inkscape "$file" --export-background-opacity=0 -h 4000 -o "$png_file".temp.png
+              pngquant -f --quality 100 "$png_file".temp.png --output "$png_file".png
+              rm "$png_file".temp.png
+          done
+          echo
+
+      - name: Commit and Push Converted PNGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git fetch origin "${GITHUB_HEAD_REF}"
+          git checkout "${GITHUB_HEAD_REF}"
+          git add .
+          git commit -m "Generate PNGs"
+          git push origin "${GITHUB_HEAD_REF}"
