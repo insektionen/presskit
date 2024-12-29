@@ -13,6 +13,10 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
+      - name: Install Inkscape
+        run: |
+          sudo apt install inkscape
+
       - name: Install Pngquant
         run: |
           sudo apt install pngquant
@@ -30,7 +34,8 @@ jobs:
               
               printf "\rProgress: [%${filled}s%${unfilled}s] %d%%" "$(printf '#%.0s' $(seq 1 $filled))" "$(printf ' %.0s' $(seq 1 $unfilled))" "$percentage"
               png_file="${file%.svg} 4k"
-              convert -background none -density 700 "$file" -quality 100 -resize 4000 "$png_file".temp.png
+              # convert -background none -density 700 "$file" -quality 100 -resize 4000 "$png_file"
+              inkscape "$file" --export-background-opacity=0 -h 4000 -o "$png_file".temp.png
               pngquant -f --quality 100 "$png_file".temp.png --output "$png_file".png
               rm "$png_file".temp.png
           done
