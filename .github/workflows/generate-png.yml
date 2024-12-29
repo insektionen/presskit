@@ -31,7 +31,7 @@ jobs:
               printf "\rProgress: [%${filled}s%${unfilled}s] %d%%" "$(printf '#%.0s' $(seq 1 $filled))" "$(printf ' %.0s' $(seq 1 $unfilled))" "$percentage"
               png_file="${file%.svg} 4k.png"
               # convert -background none -density 700 "$file" -quality 100 -resize 4000 "$png_file"
-              inkscape "$file" -d 300 --export-background-opacity=0 -h 4000 -o "$png_file"
+              inkscape "$file" --export-background-opacity=0 -h 4000 -o "$png_file"
           done
           echo
 
